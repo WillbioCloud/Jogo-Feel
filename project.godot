@@ -1,0 +1,22 @@
+config_version=5
+
+[application]
+config/name="Feel — Uma viagem em três atos"
+run/main_scene="res://scenes/Act1_Island.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+
+[autoload]
+GameFlow="*res://scripts/GameFlow.gd"
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.04, 0.06, 0.1, 1)
+
+[layer_names]
+3d_physics/layer_1="World"
+3d_physics/layer_2="Interactable"
